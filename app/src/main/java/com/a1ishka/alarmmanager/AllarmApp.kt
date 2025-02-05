@@ -69,7 +69,7 @@ fun AlarmApp(context: Context) {
         }
 
         Button(
-            onClick = { AlarmManager.cancelNearestAlarm() }
+            onClick = { AlarmManager.cancelNearestAlarm(numAlarms.toInt()) }
         ) {
             Text("Cancel nearest")
         }
